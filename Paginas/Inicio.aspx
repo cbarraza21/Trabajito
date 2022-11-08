@@ -12,7 +12,27 @@
         </div>
         <br />
         <div class="container">
-            <div class="row">Primera Linea</div>
+            <div class="row">
+                <div class="col align-self-end">
+                    <asp:Button runat="server" Text="Crear" CssClass="btn btn-success form-control-sm" ID="BtnCreate"  />
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="container row">
+            <div class="table small">
+                <asp:GridView runat="server" ID="gvusuarios" class="table table-borderless table-hover">
+                    <Columns>
+                        <asp:TemplateField HeaderText="Opciones">
+                            <ItemTemplate>
+                                <asp:Button runat="server" Text="Ver" CssClass="btn form-control-sm btn-info" ID="BtnRead" />
+                                <asp:Button runat="server" Text="Actualizar" CssClass="btn form-control-sm btn-warning" ID="BtnUpdate" />
+                                <asp:Button runat="server" Text="Eliminar" CssClass="btn form-control-sm btn-danger" ID="BtnDelete" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                </asp:GridView>
+            </div>
         </div>
     </form>
 </asp:Content>
