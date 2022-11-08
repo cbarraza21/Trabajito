@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <div class="col align-self-end">
-                    <asp:Button runat="server" Text="Crear" CssClass="btn btn-success form-control-sm" ID="BtnCreate"  />
+                    <asp:Button runat="server" Text="Crear" CssClass="btn btn-success form-control-sm" ID="BtnCreate" OnClick="BtnCreate_Click" />
                 </div>
             </div>
         </div>

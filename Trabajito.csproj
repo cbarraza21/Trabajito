@@ -74,12 +74,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Paginas\Create.aspx" />
     <Content Include="Paginas\Inicio.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dominio\Persona.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Paginas\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

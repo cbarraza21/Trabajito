@@ -7,16 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace Trabajito.Paginas
 {
-    public partial class Inicio : System.Web.UI.Page
+    public partial class Create : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void BtnCreate_Click(object sender, EventArgs e)
+        protected void BtnVolver_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Paginas/Create.aspx");
+            Response.Redirect("~/Paginas/Inicio.aspx");
         }
     }
 }
